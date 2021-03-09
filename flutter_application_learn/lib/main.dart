@@ -43,7 +43,9 @@ class _RandomWordsState extends State<RandomWords> {
         });
   }
 
-  void _pushSaved() {}
+  void _pushSaved() {
+    Navigator.of(context).push();
+  }
 
   Widget _buildRow(WordPair pair) {
     final alreadySaved = _saved.contains(pair);
